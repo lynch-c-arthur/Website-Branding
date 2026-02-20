@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.arthurlynch.com/sitemap.xml
+Sitemap: https://www.arthurclynch.com/sitemap.xml
 
 # Disallow admin/draft pages if any
 Disallow: /drafts/
