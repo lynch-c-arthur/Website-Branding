@@ -73,25 +73,13 @@
     });
   }
 
-  /* --- Contact Form Handler (static-friendly) --- */
+  /* --- Contact Form Handler --- */
   var contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
+    contactForm.addEventListener('submit', function () {
       var btn = contactForm.querySelector('button[type="submit"]');
-      var originalText = btn.textContent;
       btn.textContent = 'Sending...';
       btn.disabled = true;
-
-      // Simulate form submission (replace with Formspree/Netlify endpoint)
-      setTimeout(function () {
-        btn.textContent = 'Message Sent!';
-        contactForm.reset();
-        setTimeout(function () {
-          btn.textContent = originalText;
-          btn.disabled = false;
-        }, 3000);
-      }, 1000);
     });
   }
 
