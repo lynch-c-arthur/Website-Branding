@@ -541,18 +541,40 @@ p { margin-bottom: 1rem; }
   gap: 10px;
 }
 .social-embed-card .embed-placeholder {
-  background: var(--light-gray);
   border-radius: 6px;
-  padding: 40px;
+  padding: 40px 32px;
   text-align: center;
-  color: var(--text-light);
   font-size: 0.9rem;
   margin: 1rem 0;
-  min-height: 300px;
+  min-height: 200px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: rgba(255,255,255,0.85);
 }
+.embed-placeholder .platform-icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.embed-placeholder .platform-handle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--gold);
+  letter-spacing: 0.01em;
+}
+.embed-placeholder .platform-cta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.5);
+  font-weight: 500;
+}
+.social-embed-card .embed-placeholder-hint { display: none; }
 .follow-btn {
   display: inline-flex;
   align-items: center;
